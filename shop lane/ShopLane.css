@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Dosis:wght@200&family=Encode+Sans+SC:wght@100&family=Josefin+Sans:wght@100&family=League+Spartan:wght@100&family=Lora&family=Macondo&family=Monoton&family=Montserrat:ital,wght@0,100;0,300;0,400;1,300&family=Poppins:ital,wght@0,200;0,300;1,200&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 4px 2px rgb(17, 16, 16);
+  padding: 15px 0px;
+  min-height: 8vh;
+  margin-top: -3px !important;
+  position: fixed;
+  z-index: 50;
+  background-color: #fff;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.logo a h4 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.logo a h4 span {
+  color: #009688;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  /* font-family: sans-serif; */
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 30%;
+  padding-top: 8px;
+}
+.nav_links li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgb(27, 25, 25);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.nav_links li a:hover {
+  color: #009688;
+}
+.Icon_list {
+  display: flex;
+  /* color: rgb(27, 25, 25); */
+}
+.Icon_list i {
+  padding-top: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 50px;
+  color: rgb(27, 25, 25);
+}
+.Icon_list .crt {
+  position: relative;
+}
+.Icon_list .crt a span {
+  color: #fff;
+  background-color: #009688;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+.Ham_burger {
+  display: block;
+  padding-top: 5px;
+  cursor: pointer;
+  display: none;
+}
+.Ham_burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(27, 25, 25);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.header_images {
+  position: relative;
+  top: 75px;
+}
+.Slider_image {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Slider_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.dot {
+  /* position: absolute; */
+  height: 8px;
+  width: 8px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: black;
+}
+.image_container {
+  display: flex;
+  justify-content: space-around;
+  /* padding-left: 10px; */
+  align-items: center;
+  padding-right: auto;
+  position: relative;
+}
+.image_container .f {
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #009688;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 rgb(0 150 136 / 70%), 0 0 0 0 rgb(0 150 136 / 70%);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgb(0 150 136 / 0%), 0 0 0 0 rgb(0 150 136 / 70%);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgb(0 150 136 / 0%), 0 0 0 30px rgb(0 150 136 / 0%);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(0 150 136 / 0%), 0 0 0 30px rgb(0 150 136 / 0%);
+  }
+}
+.image_container .f img {
+  width: 80%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: auto;
+  padding-bottom: auto;
+}
+
+.image_container .f h3 {
+  /* display: inline; */
+  position: absolute;
+  color: black;
+  top: 120px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.extra {
+  left: 140px;
+  right: auto;
+}
+.extra1 {
+  left: 480px;
+  right: auto;
+}
+.extra2 {
+  right: 500px;
+  left: auto;
+}
+.extra3 {
+  right: 110px;
+  left: auto;
+}
+
+.Cloth_Section {
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  /* box-shadow: 0 2px 10px rgb(0 0 0 / 30%); */
+}
+.Cloth_Section h1 {
+  margin-left: 0px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.holder {
+  margin-top: 20px;
+  width: 230px;
+  height: 450px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+  position: relative;
+  cursor: pointer;
+}
+.holder:hover {
+  box-shadow: 0 5px 10px rgb(0 0 0 / 60%);
+  background-color: #fff;
+}
+
+#cloth_conatiner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer {
+  background-color: black;
+  color: #fff;
+}
+.footer_conatiner {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+.Online_store {
+  display: block;
+}
+.Online_store h3 {
+  text-transform: uppercase;
+  color: #b8b8b8;
+  padding-bottom: 10px;
+}
+.Online_store a p {
+  padding-top: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #b8b8b8;
+  cursor: pointer;
+}
+.Online_store a p:hover {
+  color: #009688;
+}
+/* THis css for Index.html of product deatail */
+.Solid_Sweatshirt {
+  /* background-color: black; */
+  /* padding: 20px 40px; */
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 130px;
+}
+.fist_left {
+  margin-top: 80px;
+  width: 500px;
+  height: 600px;
+}
+.Second_left {
+  margin-top: 80px;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  padding: 20px 30px;
+  font-weight: 500;
+}
+.F_img {
+  display: flex;
+  position: absolute;
+  bottom: 170px;
+}
+.box {
+  margin-left: 20px;
+  width: 110px;
+  height: 160px;
+}
+.btn {
+  position: absolute;
+  bottom: 90px;
+  left: 40px;
+}
+.btn button {
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #009688;
+  box-shadow: 2px 4px 5px #b8b8b8;
+  transition: 1s;
+  cursor: pointer;
+}
+.btn button:hover {
+  color: black;
+  box-shadow: 2px 5px 8px rgba(1, 10, 17, 0.7);
+}
+
+/* Media quires 
+Make responsive only for 550 width responsive div*/
+
+@media screen and (max-width: 400px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .logo a h4 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .nav_links {
+    position: absolute;
+    background-color: #009688;
+    top: 60px;
+    right: 0px;
+    display: none;
+  }
+  .Icon_list {
+    display: flex;
+
+    position: absolute;
+    right: 10px;
+  }
+  .Icon_list i {
+    display: none;
+  }
+  .Ham_burger {
+    position: absolute;
+    right: 0px;
+
+    display: block;
+  }
+  .header_images {
+    width: 100%;
+    top: 10px;
+    position: relative;
+  }
+  .Slider_image {
+    height: 400px;
+    width: 100%;
+  }
+  .Indicator {
+    position: absolute;
+    top: 130px;
+    left: 180px;
+  }
+  .Features {
+    display: none;
+  }
+  .image_container {
+    display: none;
+  }
+  .Cloth_Section {
+    position: relative;
+    width: 100%;
+  }
+  .Cloth_Section h1 {
+    position: relative;
+    /* left: -60px; */
+    bottom: 550px;
+    font-size: 20px;
+    /* position: absolute; */
+  }
+  #cloth_conatiner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 520px;
+    /* left: -80px; */
+  }
+  .holder {
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer_conatiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .Online_store {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navigation {
+    width: 100%;
+    position: relative;
+  }
+  .nav_links {
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    left: 0px;
+  }
+  .Icon_list {
+    position: absolute;
+    right: 30px;
+  }
+  .Ham_burger {
+    display: block;
+  }
+  .header_images {
+    width: 100%;
+    position: relative;
+    top: 20px;
+  }
+  .Indicator {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    bottom: 170px;
+  }
+  .Slider_image {
+    width: 100%;
+  }
+  #Features {
+    display: none;
+  }
+  .Cloth_Section {
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .Cloth_Section h1 {
+    position: relative;
+    bottom: 420px;
+  }
+  #cloth_conatiner {
+    position: relative;
+    bottom: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .holder {
+    margin-top: 50px;
+  }
+  /* .Cloth_Section {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 10px rgb(0 0 0 / 30%); */
+}
